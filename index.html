@@ -1,39 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Training Portal</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Onboarding - HK Entreprenad</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
+
 <body>
-<div class="layout">
-<aside class="sidebar">
-<div class="logo">
-<h2>Company Name</h2>
-<p>Training Portal</p>
-</div>
-<div id="menu"></div>
-</aside>
+  <div class="app">
 
-<main class="content">
-<div class="progress-wrapper">
-<div class="progress-bar"><div id="progressFill"></div></div>
-<span id="progressText">0%</span>
-</div>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="logo-box"></div>
+        <div>
+          <h2>HK Entreprenad</h2>
+          <p>Onboarding för mötesbokare</p>
+        </div>
+      </div>
 
-<div id="contentArea"></div>
+      <nav>
+        <div class="nav-title">ONBOARDING</div>
+        <ul>
+          <li class="active">1 Välkommen</li>
+          <li>2 Rollen</li>
+          <li>3 Arbetsdagen</li>
+          <li>4 Samtal</li>
+          <li>5 Verktyg</li>
+          <li>6 Regler</li>
+          <li>7 Checklista</li>
+        </ul>
 
-<div class="completion-box">
-<label><input type="checkbox" id="completedCheckbox"> I have completed this section</label>
-</div>
+        <div class="nav-title">UTBILDNING</div>
+        <ul>
+          <li>1 Start & upplägg</li>
+          <li>2 Mötesbokning (Grunder)</li>
+          <li>3 Pitch & värde</li>
+          <li>4 Invändningshantering</li>
+          <li>5 Mental inställning & energi</li>
+          <li>6 Uppföljning & struktur</li>
+          <li>7 Takgrund (snabb trygghet)</li>
+          <li>8 Träning & coachning</li>
+        </ul>
+      </nav>
+    </aside>
 
-<div class="navigation">
-<button id="prevBtn">Previous</button>
-<button id="nextBtn">Next</button>
-</div>
-</main>
-</div>
-<script src="js/app.js"></script>
+    <!-- MAIN -->
+    <main class="content">
+
+      <h1>Onboarding – Mötesbokare | HK Entreprenad</h1>
+
+      <div class="info-box">
+        Detta är HK Entreprenads officiella onboarding. <br/>
+        Innehållet gäller samtliga mötesbokare – nya som befintliga.<br/>
+        Det är ditt ansvar att läsa, förstå och följa informationen.
+      </div>
+
+      <section>
+        <h2>Om HK Entreprenad</h2>
+        <p>
+          HK Entreprenad är en helhetsentreprenör inom:
+        </p>
+        <ul>
+          <li>Tak</li>
+          <li>Fasad</li>
+          <li>Dränering</li>
+          <li>Renovering (invändigt & utvändigt)</li>
+        </ul>
+
+        <p><strong>Vi arbetar inte med gratisbesiktningar.</strong></p>
+        <p>Vi utför kvalitativa inspektioner som leder till affär.</p>
+      </section>
+
+      <section>
+        <h2>Varför mötesbokning är kritiskt</h2>
+        <p>
+          Utesäljarna planerar sina arbetsdagar helt efter kalendern.
+        </p>
+
+        <p><strong>Ett dåligt bokat möte innebär:</strong></p>
+        <ul>
+          <li>Förlorad dag</li>
+          <li>Förlorad affär</li>
+          <li>Förlorat förtroende</li>
+        </ul>
+      </section>
+
+      <button class="cta">
+        KVALITET &gt; KVANTITET
+      </button>
+
+    </main>
+  </div>
 </body>
 </html>
