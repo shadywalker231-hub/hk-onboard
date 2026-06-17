@@ -1,50 +1,74 @@
-const modules = Array.from({length:15}, (_,i)=>({
- title:`Name ${i+1}`,
- content:`<h1>Name ${i+1}</h1><p>Edit this module content.</p>`
-}));
+const pages = {
+  welcome: {
+    title: "Välkommen",
+    content: "Detta är din onboarding-plattform. Följ stegen i menyn."
+  },
+  role: {
+    title: "Rollen",
+    content: "Du arbetar som mötesbokare och bokar kvalificerade affärsmöten."
+  },
+  day: {
+    title: "Arbetsdagen",
+    content: "Din dag styrs av samtal, uppföljning och struktur."
+  },
+  calls: {
+    title: "Samtal",
+    content: "Fokusera på kvalitet i varje samtal, inte kvantitet."
+  },
+  tools: {
+    title: "Verktyg",
+    content: "CRM, kalender och telefon är dina viktigaste verktyg."
+  },
+  rules: {
+    title: "Regler",
+    content: "Följ alltid processer och kommunikationsstandard."
+  },
+  checklist: {
+    title: "Checklista",
+    content: "Se till att varje steg är korrekt genomfört innan du går vidare."
+  },
 
-let currentPage=0;
-const completed=JSON.parse(localStorage.getItem('completedModules'))||{};
+  start: {
+    title: "Start & upplägg",
+    content: "Här börjar din utbildning. Bygg förståelse först."
+  },
+  booking: {
+    title: "Mötesbokning",
+    content: "Lär dig boka möten som faktiskt leder till affärer."
+  },
+  pitch: {
+    title: "Pitch & värde",
+    content: "Hur du presenterar värdet avgör din framgång."
+  },
+  objections: {
+    title: "Invändningar",
+    content: "Hantera motstånd lugnt och professionellt."
+  }
+};
 
-function renderMenu(){
- const menu=document.getElementById('menu');
- menu.innerHTML='';
- modules.forEach((m,i)=>{
-  const btn=document.createElement('button');
-  btn.className='menu-btn';
-  if(i===currentPage) btn.classList.add('active');
-  if(completed[i]) btn.classList.add('completed');
-  btn.innerHTML=`<span>${m.title}</span><span>${completed[i]?'✓':''}</span>`;
-  btn.onclick=()=>{currentPage=i;renderPage();};
-  menu.appendChild(btn);
- });
-}
+// DOM elements
+const menuItems = document.querySelectorAll("nav li");
+const title = document.getElementById("title");
+const contentBox = document.getElementById("contentBox");
+const infoBox = document.getElementById("infoBox");
 
-function updateProgress(){
- const count=Object.values(completed).filter(Boolean).length;
- const pct=Math.round(count/modules.length*100);
- document.getElementById('progressFill').style.width=pct+'%';
- document.getElementById('progressText').textContent=pct+'%';
-}
+// click handler
+menuItems.forEach(item => {
+  item.addEventListener("click", () => {
 
-function renderPage(){
- document.getElementById('contentArea').innerHTML=`<div class="page">${modules[currentPage].content}</div>`;
- document.getElementById('completedCheckbox').checked=completed[currentPage]||false;
- renderMenu();
- updateProgress();
-}
+    // remove active class
+    menuItems.forEach(i => i.classList.remove("active"));
 
-document.getElementById('completedCheckbox').addEventListener('change',e=>{
- completed[currentPage]=e.target.checked;
- localStorage.setItem('completedModules',JSON.stringify(completed));
- renderMenu(); updateProgress();
+    // set active
+    item.classList.add("active");
+
+    const page = item.dataset.page;
+
+    // update content
+    if (pages[page]) {
+      title.textContent = pages[page].title;
+      contentBox.innerHTML = `<p>${pages[page].content}</p>`;
+      infoBox.style.display = "none";
+    }
+  });
 });
-
-document.getElementById('nextBtn').onclick=()=>{
- if(currentPage<modules.length-1){currentPage++;renderPage();}
-};
-document.getElementById('prevBtn').onclick=()=>{
- if(currentPage>0){currentPage--;renderPage();}
-};
-
-renderPage();
