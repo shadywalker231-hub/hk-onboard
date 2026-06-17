@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697e71569c543cc70681276a/8bb68a5d0_logo.png" rel="icon" type="image/svg+xml"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="/manifest.json" rel="manifest"/>
+  <title>
+   HK Entreprenad Onboarding
+  </title>
+  <script crossorigin="" src="/assets/index-CM_iag1_.js" type="module">
+  </script>
+  <link crossorigin="" href="/assets/index-ifT2n84b.css" rel="stylesheet"/>
+  <meta content="En intern plattform för att ge alla mötesbokare på HK Entreprenad en enhetlig och effektiv grundutbildning, tydliggöra roller och ansvarsområden samt påskynda introduktionen för nya medarbetare." name="description"/>
+  <meta content="HK Entreprenad Onboarding" property="og:title"/>
+  <meta content="En intern plattform för att ge alla mötesbokare på HK Entreprenad en enhetlig och effektiv grundutbildning, tydliggöra roller och ansvarsområden samt påskynda introduktionen för nya medarbetare." property="og:description"/>
+  <meta content="https://hk-onboard-pro.base44.app" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="HK Entreprenad Onboarding" property="og:site_name"/>
+  <meta content="HK Entreprenad Onboarding" name="twitter:title"/>
+  <meta content="En intern plattform för att ge alla mötesbokare på HK Entreprenad en enhetlig och effektiv grundutbildning, tydliggöra roller och ansvarsområden samt påskynda introduktionen för nya medarbetare." name="twitter:description"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="https://hk-onboard-pro.base44.app" name="twitter:url"/>
+  <meta content="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/render/image/public/base44-prod/public/697e71569c543cc70681276a/8bb68a5d0_logo.png?width=1200&amp;height=630&amp;resize=contain" property="og:image"/>
+  <meta content="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/render/image/public/base44-prod/public/697e71569c543cc70681276a/8bb68a5d0_logo.png?width=1200&amp;height=630&amp;resize=contain" name="twitter:image"/>
+  <meta content="yes" name="mobile-web-app-capable"/>
+  <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+  <meta content="HK Entreprenad Onboarding" name="apple-mobile-web-app-title"/>
+  <link href="https://hk-onboard-pro.base44.app" rel="canonical"/>
+  <script async="true" data-app-id="697e71569c543cc70681276a" data-platform-url="https://app.base44.com" src="/static/js/badge.js">
+  </script>
+ </head>
+ <body>
+  <div id="root">
+   <div data-seo-source="builder" id="seo-snapshot" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
+    <main>
+     <header>
+      <h1>
+       HK Entreprenad Onboarding
+      </h1>
+      <p>
+       En intern plattform för att ge alla mötesbokare på HK Entreprenad en enhetlig och effektiv grundutbildning, tydliggöra roller och ansvarsområden samt påskynda introduktionen för nya medarbetare.
+      </p>
+     </header>
+     <nav aria-label="Pages">
+      <h2>
+       Pages
+      </h2>
+      <ul>
+       <li>
+        <a href="/Calls">
+         Calls
+        </a>
+       </li>
+       <li>
+        <a href="/Checklist">
+         Checklist
+        </a>
+       </li>
+       <li>
+        <a href="/Role">
+         Role
+        </a>
+       </li>
+       <li>
+        <a href="/Rules">
+         Rules
+        </a>
+       </li>
+       <li>
+        <a href="/Tools">
+         Tools
+        </a>
+       </li>
+       <li>
+        <a href="/TrainingBookingBasics">
+         Training Booking Basics
+        </a>
+       </li>
+       <li>
+        <a href="/TrainingCoaching">
+         Training Coaching
+        </a>
+       </li>
+       <li>
+        <a href="/TrainingFollowup">
+         Training Followup
+        </a>
+       </li>
+       <li>
+        <a href="/TrainingMindset">
+         Training Mindset
+        </a>
+       </li>
+       <li>
+        <a href="/TrainingObjections">
+         Training Objections
+        </a>
+       </li>
+       <li>
+        <a href="/TrainingPitchValue">
+         Training Pitch Value
+        </a>
+       </li>
+       <li>
+        <a href="/TrainingRoofBasics">
+         Training Roof Basics
+        </a>
+       </li>
+       <li>
+        <a href="/TrainingStart">
+         Training Start
+        </a>
+       </li>
+       <li>
+        <a href="/Workday">
+         Workday
+        </a>
+       </li>
+      </ul>
+     </nav>
+    </main>
+   </div>
+  </div>
+ </body>
+</html>
